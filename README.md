@@ -25,34 +25,42 @@ Before installing the User Management System, ensure you have the following:
    Clone the project repository to your web server's document root:
 
    ```bash
-   git clone https://example.com/user_management_system.git
+   git clone https://github.com/umeshbhatiya143/Student_management_php.git
 
-# Database Setup
+## Database Setup
 
-Import the user_management_db.sql file into your MySQL database. This SQL file includes the necessary tables and structure for the application:
+   Import the user_management_db.sql file into your MySQL database. This SQL file includes the necessary tables and structure for the application:
 
-bash
-Copy code
-mysql -u your_username -p your_database_name < path/to/user_management_db.sql
-Configure Database Connection
+   ```bash
+   mysql -u your_username -p your_database_name < path/to/user_management_db.sql
+   ```
+
+## Configure Database Connection
 
 Edit the /config/config.php file with your database details:
 
-php
-Copy code
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'your_database_username');
-define('DB_PASSWORD', 'your_database_password');
-define('DB_NAME', 'user_management_db');
-Access the Application
+   ```bash
+   define('DB_SERVER', 'localhost');
+   define('DB_USERNAME', 'your_database_username');
+   define('DB_PASSWORD', 'your_database_password');
+   define('DB_NAME', 'user_management_db');
+```
 
-Open your web browser and navigate to the project URL to start using the User Management System.
+## Access the Application
 
-Usage
-To Register: Visit /public/register.php and complete the registration form.
-To Log In: Go to /public/login.php and enter your username and password.
-To View the Dashboard: After logging in, you'll be automatically redirected to the dashboard at /public/dashboard.php.
+   Open your web browser and navigate to the project URL to start using the User Management System.
+    
+    ```bash
+    http://localhost/user_management/public/
 
-Contact
-Your Name - email@example.com
-Project Link: https://example.com/user_management_system.git
+
+## Usage
+- **To Register**: Visit /public/register.php and complete the registration form.
+- **To Log In**: Go to /public/login.php and enter your username and password.
+- **To View the Dashboard**: After logging in, you'll be automatically redirected to the dashboard at /public/dashboard.php.
+
+## Contact
+
+- **Your Name** - Umesh Kumar Bhatiya
+- **Reg No** - 2023IS25
+- **Project Link**: https://github.com/umeshbhatiya143/Student_management_php

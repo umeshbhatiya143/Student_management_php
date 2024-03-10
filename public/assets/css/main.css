@@ -1,16 +1,18 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #FAFAFA; /* A very light gray as the background */
 }
 
 header, footer {
-    background-color: #f4f4f4;
+    background-color: #263238; /* Deep gray-blue, almost charcoal, for header and footer */
+    color: #FFFFFF; /* White text for contrast and readability */
     padding: 20px 0;
     text-align: center;
 }
 
 .site-header {
-    background-color: #007BFF;
+    background-color: #37474F; /* A shade lighter than the footer/header for subtle contrast */
     color: #FFFFFF;
 }
 
@@ -34,26 +36,34 @@ nav ul, .site-nav ul {
     display: flex;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-.site-nav ul li {
-    margin-left: 20px;
+nav ul li, .site-nav ul li {
+    margin-left: 20px; /* Consistent spacing */
 }
 
 nav ul li a, .site-nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 }
 
 .site-nav ul li a:hover, .btn-logout:hover {
-    color: #FFD700;
+    color: #4DB6AC; /* Teal for an energetic yet sophisticated hover effect */
 }
 
-.auth-container, .dashboard-container {
+.auth-container{
+    background-color: #FFFFFF; /* Pure white for the content areas for maximum contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 320px; /* Slightly narrower for a more focused form */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ .dashboard-container {
     margin: auto;
     width: 90%;
     height: 85vh;
@@ -69,38 +79,40 @@ nav ul li a, .site-nav ul li a {
 
 .form-group label {
     display: block;
+    color: #263238; /* Matching the header/footer for coherence */
 }
 
 .form-group input[type="text"],
 .form-group input[type="password"] {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     margin-top: 5px;
+    border: 1px solid #B0BEC5; /* Light gray for the input borders */
+    border-radius: 4px;
+    background-color: #ECEFF1; /* Lighter gray for the input background */
 }
 
 button[type="submit"], .btn-logout {
-    display: inline-block;
-    background-color: #f44336;
+    background-color: #009688; /* Teal, matching the hover effects for consistency */
     color: white;
     padding: 10px 20px;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-.btn-logout:hover {
-    background-color: #c0392b;
+button[type="submit"]:hover, .btn-logout:hover {
+    background-color: #00796B; /* Darker teal on hover for an interactive feedback */
 }
 
 footer.section-p1 {
-    background-color: #0e6a9f; 
-    color: #ffffff; 
+    background-color: #00796B; /* Darker blue for footer consistency with header */
     padding: 40px 20px; 
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-around; 
     align-items: flex-start; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 footer .col {
@@ -109,18 +121,13 @@ footer .col {
 }
 
 footer .logo h4, footer h4 {
-    color: #f8d362; 
+    color: #f8d362; /* Golden color for accent */
     margin-bottom: 15px; 
     font-size: 24px;
 }
 
-footer .logo span {
-    color: #e63946;
-}
-
 footer p {
-    font-size: 16px; 
     line-height: 1.5; 
     margin-bottom: 10px; 
+    color: #f0f2f5; /* Lighter text for readability */
 }
-

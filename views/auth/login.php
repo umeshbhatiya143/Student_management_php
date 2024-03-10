@@ -21,8 +21,11 @@
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
+            <p><a href="forgot-password.php" class="btn-link">Forgot Password?</a></p>
             <button type="submit">Log In</button>
         </form>
+        <p>Create an Account? <a href="register.php" class="btn-link">Register Here</a></p>
+       
     </div>
 </div>
 

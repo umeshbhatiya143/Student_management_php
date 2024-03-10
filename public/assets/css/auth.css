@@ -1,4 +1,3 @@
-
 .login-wrapper {
     height: 85vh;
     display: flex;
@@ -8,11 +7,10 @@
 
 .login-container{
     width: 300px;
-    background-color: rgba(199, 171, 171, 0.9);
+    background-color: #e0e0e0; /* Updated to a softer, neutral gray */
     padding: 40px;
-  
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(36, 33, 33, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form-container{
@@ -21,8 +19,8 @@
     justify-content: center;
 }
 
-.form-container p{
-    font-size: 14px;
+.login-container p, .login-container a {
+    font-size: 12px;
 }
 
 .login-container h2 {
@@ -38,17 +36,19 @@
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #666;
+    color: #333; /* Slightly darker for contrast */
 }
 
 .form-group input[type="text"],
+.forgot-password input[type="email"],
 .form-group input[type="password"],
 .form-group input[type="email"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #ffffff; /* Maintains white for clarity and focus */
 }
 
 button[type="submit"] {
@@ -56,7 +56,7 @@ button[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #4CAF50; /* Keeps the vibrant green for actions */
     color: white;
     font-size: 16px;
     cursor: pointer;
@@ -64,5 +64,24 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #388E3C; /* A deeper green for an interactive effect */
 }
+
+.forgot-password-container{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot-password{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #e0e0e0;
+    padding: 40px;
+ }

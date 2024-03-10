@@ -15,8 +15,8 @@
         </div>
         <div class="col">
             <h4><strong>Submitted by:</strong></h4>
-            <p><strong>Name:</strong> Kavya Kambham</p>
-            <p><strong>Reg.No.:</strong> 2023DS13</p>
+            <p><strong>Name:</strong> Umesh Kumar Bhatiya</p>
+            <p><strong>Reg.No.:</strong> 2023IS25</p>
             <p><strong>Assignment:</strong> 13</p>
             <p><strong>Date:</strong> 10/03/2024</p>
         </div>
