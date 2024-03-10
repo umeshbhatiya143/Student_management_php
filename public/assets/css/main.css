@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.site-header {
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul, .site-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.site-nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a, .site-nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-nav ul li a:hover, .btn-logout:hover {
+    color: #FFD700;
+}
+
+.auth-container, .dashboard-container {
+    margin: auto;
+    width: 90%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-group, .dashboard-content li {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button[type="submit"], .btn-logout {
+    display: inline-block;
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background-color: #c0392b;
+}
+
+footer.section-p1 {
+    background-color: #0e6a9f; 
+    color: #ffffff; 
+    padding: 40px 20px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    align-items: flex-start; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+footer .col {
+    max-width: 300px; 
+    margin: 20px; 
+}
+
+footer .logo h4, footer h4 {
+    color: #f8d362; 
+    margin-bottom: 15px; 
+    font-size: 24px;
+}
+
+footer .logo span {
+    color: #e63946;
+}
+
+footer p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    margin-bottom: 10px; 
+}
+
